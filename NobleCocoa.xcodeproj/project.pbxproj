@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE8E1322168CF1F900AEEB8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8E1321168CF1F900AEEB8A /* Cocoa.framework */; };
+		BE8E132C168CF1F900AEEB8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE8E132A168CF1F900AEEB8A /* InfoPlist.strings */; };
+		BE8E132E168CF1F900AEEB8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8E132D168CF1F900AEEB8A /* main.m */; };
+		BE8E1332168CF1F900AEEB8A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BE8E1330168CF1F900AEEB8A /* Credits.rtf */; };
+		BE8E1338168CF1F900AEEB8A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE8E1336168CF1F900AEEB8A /* MainMenu.xib */; };
+		BE8E1345168FA1C500AEEB8A /* NCAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8E1344168FA1C500AEEB8A /* NCAppController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE8E131D168CF1F900AEEB8A /* NobleCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NobleCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8E1321168CF1F900AEEB8A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BE8E1324168CF1F900AEEB8A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BE8E1325168CF1F900AEEB8A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BE8E1326168CF1F900AEEB8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BE8E1329168CF1F900AEEB8A /* NobleCocoa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NobleCocoa-Info.plist"; sourceTree = "<group>"; };
+		BE8E132B168CF1F900AEEB8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE8E132D168CF1F900AEEB8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE8E132F168CF1F900AEEB8A /* NobleCocoa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NobleCocoa-Prefix.pch"; sourceTree = "<group>"; };
+		BE8E1331168CF1F900AEEB8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BE8E1337168CF1F900AEEB8A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BE8E1343168FA1C500AEEB8A /* NCAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCAppController.h; sourceTree = "<group>"; };
+		BE8E1344168FA1C500AEEB8A /* NCAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCAppController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE8E131A168CF1F900AEEB8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8E1322168CF1F900AEEB8A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE8E1312168CF1F900AEEB8A = {
+			isa = PBXGroup;
+			children = (
+				BE8E1327168CF1F900AEEB8A /* NobleCocoa */,
+				BE8E1320168CF1F900AEEB8A /* Frameworks */,
+				BE8E131E168CF1F900AEEB8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE8E131E168CF1F900AEEB8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E131D168CF1F900AEEB8A /* NobleCocoa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE8E1320168CF1F900AEEB8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E1321168CF1F900AEEB8A /* Cocoa.framework */,
+				BE8E1323168CF1F900AEEB8A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE8E1323168CF1F900AEEB8A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E1324168CF1F900AEEB8A /* AppKit.framework */,
+				BE8E1325168CF1F900AEEB8A /* CoreData.framework */,
+				BE8E1326168CF1F900AEEB8A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BE8E1327168CF1F900AEEB8A /* NobleCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E1343168FA1C500AEEB8A /* NCAppController.h */,
+				BE8E1344168FA1C500AEEB8A /* NCAppController.m */,
+				BE8E1336168CF1F900AEEB8A /* MainMenu.xib */,
+				BE8E1328168CF1F900AEEB8A /* Supporting Files */,
+			);
+			path = NobleCocoa;
+			sourceTree = "<group>";
+		};
+		BE8E1328168CF1F900AEEB8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E1329168CF1F900AEEB8A /* NobleCocoa-Info.plist */,
+				BE8E132A168CF1F900AEEB8A /* InfoPlist.strings */,
+				BE8E132D168CF1F900AEEB8A /* main.m */,
+				BE8E132F168CF1F900AEEB8A /* NobleCocoa-Prefix.pch */,
+				BE8E1330168CF1F900AEEB8A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE8E131C168CF1F900AEEB8A /* NobleCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE8E133B168CF1F900AEEB8A /* Build configuration list for PBXNativeTarget "NobleCocoa" */;
+			buildPhases = (
+				BE8E1319168CF1F900AEEB8A /* Sources */,
+				BE8E131A168CF1F900AEEB8A /* Frameworks */,
+				BE8E131B168CF1F900AEEB8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NobleCocoa;
+			productName = NobleCocoa;
+			productReference = BE8E131D168CF1F900AEEB8A /* NobleCocoa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE8E1314168CF1F900AEEB8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NC;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Matt Diephouse";
+			};
+			buildConfigurationList = BE8E1317168CF1F900AEEB8A /* Build configuration list for PBXProject "NobleCocoa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BE8E1312168CF1F900AEEB8A;
+			productRefGroup = BE8E131E168CF1F900AEEB8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE8E131C168CF1F900AEEB8A /* NobleCocoa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE8E131B168CF1F900AEEB8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8E132C168CF1F900AEEB8A /* InfoPlist.strings in Resources */,
+				BE8E1332168CF1F900AEEB8A /* Credits.rtf in Resources */,
+				BE8E1338168CF1F900AEEB8A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE8E1319168CF1F900AEEB8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8E132E168CF1F900AEEB8A /* main.m in Sources */,
+				BE8E1345168FA1C500AEEB8A /* NCAppController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE8E132A168CF1F900AEEB8A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE8E132B168CF1F900AEEB8A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BE8E1330168CF1F900AEEB8A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE8E1331168CF1F900AEEB8A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BE8E1336168CF1F900AEEB8A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE8E1337168CF1F900AEEB8A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE8E1339168CF1F900AEEB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BE8E133A168CF1F900AEEB8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BE8E133C168CF1F900AEEB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NobleCocoa/NobleCocoa-Prefix.pch";
+				INFOPLIST_FILE = "NobleCocoa/NobleCocoa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BE8E133D168CF1F900AEEB8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NobleCocoa/NobleCocoa-Prefix.pch";
+				INFOPLIST_FILE = "NobleCocoa/NobleCocoa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE8E1317168CF1F900AEEB8A /* Build configuration list for PBXProject "NobleCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8E1339168CF1F900AEEB8A /* Debug */,
+				BE8E133A168CF1F900AEEB8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE8E133B168CF1F900AEEB8A /* Build configuration list for PBXNativeTarget "NobleCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8E133C168CF1F900AEEB8A /* Debug */,
+				BE8E133D168CF1F900AEEB8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE8E1314168CF1F900AEEB8A /* Project object */;
+}
