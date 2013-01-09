@@ -10,6 +10,7 @@
 
 
 @interface NCAppController ()
+@property (assign, nonatomic) IBOutlet NSButton *resetButton;
 @property (assign, nonatomic) IBOutlet NSButton *createButton;
 @property (assign, nonatomic) IBOutlet NSWindow *window;
 
@@ -21,7 +22,8 @@
 @property (assign, nonatomic, getter=isProcessing) BOOL processing;
 
 @property (assign, nonatomic, readonly) BOOL formValid;
-@property (assign, nonatomic, readonly) BOOL buttonEnabled;
+@property (assign, nonatomic, readonly) BOOL canReset;
+@property (assign, nonatomic, readonly) BOOL canCreate;
 @property (strong, nonatomic, readonly) NSColor *textColor;
 @end
 
@@ -30,7 +32,18 @@
 #pragma mark -
 #pragma mark KVO Keypaths
 
-+ (NSSet *) keyPathsForValuesAffectingButtonEnabled
++ (NSSet *) keyPathsForValuesAffectingCanReset
+{
+    return [NSSet setWithObjects:
+            @"firstName",
+            @"lastName",
+            @"email",
+            @"reEmail",
+            @"processing",
+            nil];
+}
+
++ (NSSet *) keyPathsForValuesAffectingCanCreate
 {
     return [NSSet setWithObjects:
             @"formValid",
@@ -58,7 +71,17 @@
 #pragma mark -
 #pragma mark Calculated Properties
 
-- (BOOL) buttonEnabled
+- (BOOL) canReset
+{
+    NSString *firstName = self.firstName;
+    NSString *lastName  = self.lastName;
+    NSString *email     = self.email;
+    NSString *reEmail   = self.reEmail;
+    BOOL hasData = firstName.length > 0 || lastName.length > 0 || email.length > 0 || reEmail.length > 0;
+    return hasData && !self.isProcessing;
+}
+
+- (BOOL) canCreate
 {
     return !self.isProcessing && self.formValid;
 }
@@ -88,6 +111,14 @@
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         self.processing = NO;
     });
+}
+
+- (IBAction) reset:(id)sender
+{
+    self.firstName  = nil;
+    self.lastName   = nil;
+    self.email      = nil;
+    self.reEmail    = nil;
 }
 
 
